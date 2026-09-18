@@ -152,7 +152,7 @@ compose(set(to: \.cachePolicy, .reloadIgnoringCacheData), set(to: \.networkServi
 Requester
 ------
 
-This protocol is for abstract the network client, just has a function that accepts an `Request`  and a closure as response for the callback (this closure has a type alias `Response<T>` and take a `Result` type as a parameter)
+This protocol is for abstract the network client, just has a function that accepts an `Request`  and a closure as response for the callback (this closure has a type alias `RequestResponse<T>` and take a `Result` type as a parameter)
 
 Example using Alamofire:
 
@@ -191,4 +191,3 @@ License
 ======
 
 JustNetworking is released under the MIT license. See LICENSE for details.
-
